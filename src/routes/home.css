@@ -1,3 +1,60 @@
-h1 {
-  font-size: 10vh;
+.home-container {
+  width: 80vw;
+  height: 65vh;
+
+  margin-left: 10vw;
+  margin-top: 10vh;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 4vh 2vw;
+
+  color: var(--bg-color);
+}
+
+.home-container>div {
+  background-color: var(--secondary);
+  border-radius: 15px;
+  box-shadow:
+    5px 5px 20px rgb(0, 0, 0, 0.3),
+    -5px -5px 20px rgb(0, 0, 0, 0.3);
+
+  border: solid var(--bg-color) 2px;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.about {
+  grid-row: span 2;
+
+  font-size: 3.5vh;
+
+  padding: 2vh 4vw;
+}
+
+.name {
+  font-size: 3vh;
+}
+
+.icons {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.icons>a {
+  display: grid;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
 }
