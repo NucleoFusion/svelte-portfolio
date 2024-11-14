@@ -58,3 +58,37 @@
   width: 60px;
   height: 60px;
 }
+
+@media (max-width:850px) {
+  .icons {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 730px) {
+  .name {
+    font-size: 2.5vh;
+  }
+
+  .home-container {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 510px) {
+  .home-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+
+    height: 100vh;
+  }
+
+  .about {
+    grid-row: span 1;
+  }
+}

@@ -25,10 +25,6 @@
     document.querySelector(".bg").style.opacity = "0.6";
     document.querySelector(".bg").style.zIndex = 10;
   };
-
-  $effect(() => {
-    console.log($state.snapshot(width));
-  });
 </script>
 
 {#if width > 700}
