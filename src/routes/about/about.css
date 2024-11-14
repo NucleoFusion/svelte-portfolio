@@ -1,0 +1,79 @@
+.main-container {
+  width: 90vw;
+  height: 77vh;
+
+  margin-left: 4vw;
+  margin-top: 5vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr 1fr 4fr;
+
+  gap: 2vh 1vw;
+}
+
+.main-container>div {
+  display: grid;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--secondary);
+
+  border-radius: 15px;
+
+  padding: 0vh 2vw;
+}
+
+.main-container>div:nth-child(3),
+.main-container>div:first-child {
+  grid-row: span 2;
+}
+
+.experience {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+}
+
+.experience h2 {
+  font-size: 3vh;
+}
+
+.experience h3 {
+  font-size: 2vh;
+}
+
+.experience-div {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+
+  margin-top: -5vh;
+}
+
+.experience-div>div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.experience-div>div h3:first-child {
+  text-align: left;
+}
+
+.experience-div>div h3:last-child {
+  text-align: right;
+}
+
+.experience p {
+  margin-left: 2.5vw;
+  margin-right: 5vw;
+
+  text-align: left;
+}
+
+.descr {
+  font-size: 2vh;
+}
