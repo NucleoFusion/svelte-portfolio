@@ -1,8 +1,8 @@
 .main-container {
-  width: 90vw;
+  width: 85vw;
   height: 77vh;
 
-  margin-left: 4vw;
+  margin-left: 6.5vw;
   margin-top: 5vh;
 
   display: grid;
@@ -23,7 +23,6 @@
 
   border-radius: 15px;
 
-  padding: 0vh 2vw;
 }
 
 .main-container>div:nth-child(3),
@@ -35,6 +34,8 @@
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
+
+  padding: 1vh 3vw;
 }
 
 .experience h2 {
@@ -76,4 +77,52 @@
 
 .descr {
   font-size: 2vh;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+
+  padding: 7vh 2.5vw;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+
+  padding: 2vh 5vw;
+}
+
+.education>h2 {
+  font-size: 3vh;
+}
+
+.education>div {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+}
+
+.education>div>div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.education>div>div *:last-child {
+  text-align: right;
+}
+
+.education>div>div *:first-child {
+  text-align: left;
+}
+
+.education>div>div:last-child {
+  text-align: left;
+  margin-left: 1vw;
+  font-size: 1.75vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }

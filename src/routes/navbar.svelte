@@ -1,12 +1,8 @@
 <script>
-  import { redirect } from "@sveltejs/kit";
   import { fly } from "svelte/transition";
   import src from "$lib/assets/home.png";
   import dd from "$lib/assets/dd.png";
-
-  function onclick(url) {
-    redirect(302, url);
-  }
+  import { goto } from "$app/navigation";
 
   let width = $state(window.innerWidth);
   window.onresize = function () {
@@ -40,10 +36,10 @@
         tabindex="0"
         class="button-style"
         onclick={() => {
-          onclick("/tui");
+          goto("/tui");
         }}
         onkeydown={() => {
-          onclick("/tui");
+          goto("/tui");
         }}
       >
         TUI
@@ -53,10 +49,10 @@
         tabindex="0"
         class="button-style"
         onclick={() => {
-          onclick("/projects");
+          goto("/projects");
         }}
         onkeydown={() => {
-          onclick("/projects");
+          goto(302, "/projects");
         }}
       >
         Projects
@@ -66,10 +62,10 @@
         tabindex="0"
         class="button-style"
         onclick={() => {
-          onclick("/about");
+          goto("/about");
         }}
         onkeydown={() => {
-          onclick("/about");
+          goto(302, "/about");
         }}
       >
         About
@@ -79,10 +75,10 @@
         tabindex="0"
         class="button-style"
         onclick={() => {
-          onclick("/contact");
+          goto("/contact");
         }}
         onkeydown={() => {
-          onclick("/contact");
+          goto("/contact");
         }}
       >
         Contact

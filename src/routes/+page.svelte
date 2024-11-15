@@ -17,7 +17,6 @@
 </script>
 
 {#if mount}
-  <Navbar />
   <div class="home-container jetBrainsMono">
     <div class="name" in:fly={{ x: -200, duration: 850 }}>
       <h1>Lakshit Singh</h1>
