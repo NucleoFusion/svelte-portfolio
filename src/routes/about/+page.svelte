@@ -39,7 +39,7 @@
       <div class="edu-div">
         <div>
           <h3>Bachelors of Science in Computer Science</h3>
-          <h3>2026-27</h3>
+          <h3>2023-27</h3>
         </div>
         <div>
           <h4>University of Delhi</h4>

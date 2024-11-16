@@ -10,6 +10,8 @@
   grid-template-rows: 4fr 1fr 4fr;
 
   gap: 2vh 1vw;
+
+  color: var(--bg-color);
 }
 
 .main-container>div {

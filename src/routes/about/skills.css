@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 10fr 1fr;
+
 }
 
 .skills-container>button {
@@ -15,6 +16,7 @@
 
 .skills-container>button:hover {
   background-color: rgb(0, 0, 0, .3);
+  cursor: pointer;
 }
 
 .skills-container>button:first-child {
@@ -25,4 +27,45 @@
 .skills-container>button:last-child {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.skills-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.skills-container>div>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  grid-auto-rows: 1fr;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills-container>div img {
+  display: block;
+
+  width: 60px;
+  height: 60px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-container>div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+
+  width: 100%;
+  height: 100%;
+}
+
+#etc {
+  width: 30px;
+  height: 30px;
 }
