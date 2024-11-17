@@ -99,10 +99,10 @@
           tabindex="0"
           class="button-style"
           onclick={() => {
-            onclick("/tui");
+            goto("/tui");
           }}
           onkeydown={() => {
-            onclick("/tui");
+            goto("/tui");
           }}
         >
           TUI
@@ -114,10 +114,10 @@
           tabindex="0"
           class="button-style"
           onclick={() => {
-            onclick("/projects");
+            goto("/projects");
           }}
           onkeydown={() => {
-            onclick("/projects");
+            goto("/projects");
           }}
         >
           Projects
@@ -129,10 +129,10 @@
           tabindex="0"
           class="button-style"
           onclick={() => {
-            onclick("/about");
+            goto("/about");
           }}
           onkeydown={() => {
-            onclick("/about");
+            goto("/about");
           }}
         >
           About
@@ -144,10 +144,10 @@
           tabindex="0"
           class="button-style"
           onclick={() => {
-            onclick("/contact");
+            goto("/contact");
           }}
           onkeydown={() => {
-            onclick("/contact");
+            goto("/contact");
           }}
         >
           Contact
