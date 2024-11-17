@@ -171,5 +171,7 @@
 @media (max-width:510px) {
   .main-container {
     margin-bottom: 40vh;
+
+    margin-left: 0vw;
   }
 }

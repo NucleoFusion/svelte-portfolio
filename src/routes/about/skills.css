@@ -81,6 +81,11 @@
     width: 20px;
     height: 20px;
   }
+
+  .skills-container>button>img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -92,5 +97,18 @@
   #etc {
     width: 15px;
     height: 15px;
+  }
+
+  .skills-container {
+    min-height: 50vh;
+  }
+
+  .skills-container h1 {
+    font-size: 3vh;
+  }
+
+  .skills-container>button>img {
+    width: 20px;
+    height: 20px;
   }
 }
