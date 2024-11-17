@@ -64,6 +64,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
+  .home-container h1 {
+    font-size: 3.5vh;
+  }
+
+  .about {
+    font-size: 2.5vh;
+  }
 }
 
 @media (max-width: 730px) {
@@ -92,5 +100,10 @@
 
   .about {
     grid-row: span 1;
+  }
+
+  .home-container img {
+    width: 40px;
+    height: 40px;
   }
 }

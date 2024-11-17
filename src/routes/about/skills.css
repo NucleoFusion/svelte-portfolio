@@ -3,6 +3,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 10fr 1fr;
 
+  min-height: 30vh;
 }
 
 .skills-container>button {
@@ -68,4 +69,28 @@
 #etc {
   width: 30px;
   height: 30px;
+}
+
+@media (max-width: 860px) {
+  .skills-container>div img:not(#etc) {
+    width: 50px;
+    height: 50px;
+  }
+
+  #etc {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .skills-container>div img:not(#etc) {
+    width: 35px;
+    height: 35px;
+  }
+
+  #etc {
+    width: 15px;
+    height: 15px;
+  }
 }
