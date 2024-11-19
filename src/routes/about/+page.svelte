@@ -11,9 +11,9 @@
     <div class="descr">
       <h2>Hi!</h2>
       <p>
-        I am a Software Developer who specializes in Backend/Systems
-        Development, I am fluent in working with Go, Node, C++, Python and Also
-        have know React and Svelte For UI Development.
+        I am a Software Developer who specializes in Backend Development, I am
+        fluent in working with Go, Node, C++, Python and Also have know React
+        and Svelte For UI Development.
       </p>
     </div>
     <div class="experience">

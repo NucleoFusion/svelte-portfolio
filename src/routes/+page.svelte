@@ -22,8 +22,8 @@
       <h1>Lakshit Singh</h1>
     </div>
     <div class="about" in:fly={{ x: 200, duration: 850 }}>
-      A software developer specializing in Back-End and Systems Development from
-      Delhi, India.
+      A software developer specializing in Back-End Development from Delhi,
+      India.
     </div>
     <div class="icons" in:fly={{ x: -200, duration: 850 }}>
       <a href={resumepdf} download><img src={resume} alt="resume" /></a>
