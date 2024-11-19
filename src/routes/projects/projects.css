@@ -1,0 +1,47 @@
+.projects-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 4vw;
+
+  background: var(--secondary);
+
+  width: 78vw;
+  height: 64vh;
+
+  margin-top: 6vh;
+  margin-left: 4vw;
+
+  border-radius: 15px;
+
+  padding: 5vh 6vw;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+.projects-container>div {
+  background: var(--bg-color);
+
+  border-radius: 15px;
+}
+
+.projects-container>div:not(.floater) {
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, .4), -10px -10px 30px rgb(0, 0, 0, .6);
+}
+
+.floater {
+  position: absolute;
+
+  left: 27.5vw;
+  top: 3.5vh;
+
+  z-index: 11;
+
+  width: 36vw;
+  height: 68vh;
+
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, .4), -10px -10px 30px rgb(0, 0, 0, .8);
+}
