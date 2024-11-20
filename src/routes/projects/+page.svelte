@@ -1,8 +1,12 @@
 <script>
+  import ProjectHero from "../components/projectHero.svelte";
+  import left from "$lib/assets/left-light.png";
+  import right from "$lib/assets/right-light.png";
+
   let projects = [
     "transpohub",
     "footballAPI",
-    "shortIt",
+    "lapisBlog",
     "e-comm",
     "lapisOAuth",
   ];
@@ -25,15 +29,27 @@
 
 <div class="projects-container jetBrainsMono">
   <div class="floater">
-    <button onclick={decrement}>{"<"}</button>
-    <h1>{curr}</h1>
-    <button onclick={increment}>{">"}</button>
+    <button onclick={decrement}>
+      <img alt="arrow left" src={left} />
+    </button>
+    {#key curr}
+      <ProjectHero projectName={projects[curr]} />
+    {/key}
+    <button onclick={increment}><img alt="arrow right" src={right} /></button>
   </div>
-  {#if prev > 0}
-    <div>{prev}</div>
+  {#if prev >= 0}
+    {#key prev}
+      <div class="prev">
+        <ProjectHero projectName={projects[prev]} />
+      </div>
+    {/key}
   {/if}
-  {#if curr < 4}
-    <div>{next}</div>
+  {#if next <= 4}
+    {#key next}
+      <div class="next">
+        <ProjectHero projectName={projects[next]} />
+      </div>
+    {/key}
   {/if}
 </div>
 

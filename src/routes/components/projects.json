@@ -1,0 +1,49 @@
+{
+  "footballAPI":{
+    "title":"FootballAPI",
+    "descr":"A Restful API that provides the user with up-to-date football stats on players, clubs and stadiums. It is  written purely in Go and standard library, with no external libraries. It utilizes Go's amazing Concurrency features to provide a Blazingly Fast response time. The API's Documentation is written in React to provide a seamless and Responsive UI/UX and also provides a Query Builder section.",
+    "stack":[
+      "Go",
+      "MongoDB",
+      "React"
+    ],
+    "onGoing":false
+  },
+  "lapisOAuth":{
+    "title":"lapisOAuth - An Authentication System",
+    "descr":"lorem ipsum dolor sit amet",
+    "stack":[
+      "Go",
+      "PostgreSQL",
+      "React"
+    ]
+  },
+  "e-comm":{
+    "title":"E-commerce Website",
+    "descr":"lorem ipsom dolor sit amet",
+    "stack":[
+      "Node",
+      "PostgreSQL",
+      "React"
+    ],
+    "onGoing":true
+  },
+  "lapisBlog":{
+    "title":"LapisBlog",
+    "descr":"lorem ipsom dolor sit amet",
+    "stack":[
+      "Go",
+      "PostgreSQL"
+    ],
+    "onGoing":true
+  },
+  "transpohub":{
+    "title":"Transpohub",
+    "descr":"lorem ipsom dolor sit amet",
+    "stack":[
+      "Node",
+      "MongoDB",
+      "React"
+    ]
+  }
+}
