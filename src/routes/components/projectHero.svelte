@@ -3,12 +3,16 @@
 
   import { fade } from "svelte/transition";
 
-  let { projectName } = $props();
+  let { projectName, floater } = $props();
 
   let currData = projects[projectName];
 </script>
 
-<div class="projectData" in:fade={{ duration: 2000 }}>
+<div
+  class="projectData"
+  in:fade={{ delay: 400, duration: 300 }}
+  out:fade={{ duration: 300 }}
+>
   <h1>{currData.title}</h1>
   <p>{currData.descr}</p>
   <div class="stack">
@@ -16,12 +20,15 @@
       <h3>{tech}</h3>
     {/each}
   </div>
-  <div>
-    <button>View Details</button>
-  </div>
-  {#if currData.onGoing}
-    <div></div>
-    <h1>ONGOING</h1>
+  {#if floater}
+    <div>
+      <button>View Details</button>
+    </div>
+  {/if}
+  {#if currData.onGoing && floater}
+    <div class="ongoing">
+      <h2>ONGOING</h2>
+    </div>
   {/if}
 </div>
 
@@ -51,16 +58,37 @@
 
     border-radius: 10px;
 
-    font-size: 1.5vh;
+    font-size: 1.75vh;
     color: #c6d0f5;
 
     border: solid #c6d0f5 1px;
     background: transparent;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .projectData button:hover {
+    background: var(--secondary);
+    color: var(--bg-color);
+    cursor: pointer;
   }
 
   .projectData > div:has(button) {
     display: grid;
     justify-content: center;
     align-items: center;
+  }
+
+  .ongoing {
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+
+    background: orange;
+    color: var(--bg-color);
+
+    padding: 0vh 0.5vw;
+
+    border-radius: 10px;
   }
 </style>

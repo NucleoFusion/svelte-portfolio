@@ -2,6 +2,7 @@
   import ProjectHero from "../components/projectHero.svelte";
   import left from "$lib/assets/left-light.png";
   import right from "$lib/assets/right-light.png";
+  import { fade } from "svelte/transition";
 
   let projects = [
     "transpohub",
@@ -33,23 +34,31 @@
       <img alt="arrow left" src={left} />
     </button>
     {#key curr}
-      <ProjectHero projectName={projects[curr]} />
+      <ProjectHero projectName={projects[curr]} floater={true} />
     {/key}
     <button onclick={increment}><img alt="arrow right" src={right} /></button>
   </div>
   {#if prev >= 0}
-    {#key prev}
-      <div class="prev">
+    <div
+      class="prev"
+      out:fade={{ duration: 300 }}
+      in:fade={{ delay: 100, duration: 300 }}
+    >
+      {#key prev}
         <ProjectHero projectName={projects[prev]} />
-      </div>
-    {/key}
+      {/key}
+    </div>
   {/if}
   {#if next <= 4}
-    {#key next}
-      <div class="next">
+    <div
+      class="next"
+      out:fade={{ duration: 300 }}
+      in:fade={{ delay: 100, duration: 300 }}
+    >
+      {#key next}
         <ProjectHero projectName={projects[next]} />
-      </div>
-    {/key}
+      {/key}
+    </div>
   {/if}
 </div>
 
