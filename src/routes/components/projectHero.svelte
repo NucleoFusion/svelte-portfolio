@@ -11,7 +11,7 @@
 <div
   class="projectData"
   in:fade={{ delay: 400, duration: 300 }}
-  out:fade={{ duration: 300 }}
+  out:fade={window.innerWidth > 830 ? { duration: 300 } : { duration: 0 }}
 >
   <h1>{currData.title}</h1>
   <p>{currData.descr}</p>
@@ -90,5 +90,17 @@
     padding: 0vh 0.5vw;
 
     border-radius: 10px;
+  }
+
+  @media (max-width: 1800px) {
+    .projectData button {
+      width: 15vw;
+    }
+  }
+
+  @media (max-width: 830px) {
+    .projectData button {
+      width: 30vw;
+    }
   }
 </style>

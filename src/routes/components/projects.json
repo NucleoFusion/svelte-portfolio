@@ -10,8 +10,8 @@
     "onGoing":false
   },
   "lapisOAuth":{
-    "title":"lapisOAuth - An Authentication System",
-    "descr":"lorem ipsum dolor sit amet",
+    "title":"LapisOAuth",
+    "descr":"lapisOAuth is a partial OAuth like Authentication System written in Go and Postgres for Backend and React for frontend. It provides the user with easy-to-understand instructions to implement the project in their own environment. It utilizes modern cryptographic techniques for Hashing to create a secure password maintenance.",
     "stack":[
       "Go",
       "PostgreSQL",
@@ -20,7 +20,7 @@
   },
   "e-comm":{
     "title":"E-commerce Website",
-    "descr":"lorem ipsom dolor sit amet",
+    "descr":"An E-commerce website created in Node and React with PostgreSQL as the Database Management System. It utilizes The power of Node and PostgreSQL to create a fast and scalable backend system and takes advantage of React's multiple features to provide a beautiful and easy UI/UX",
     "stack":[
       "Node",
       "PostgreSQL",
@@ -30,7 +30,7 @@
   },
   "lapisBlog":{
     "title":"LapisBlog",
-    "descr":"lorem ipsom dolor sit amet",
+    "descr":"LapisBlog (not yet decided on actual name) is a Social Network Platform where users can interact with posts of others anonymously and/or also interact while showing their profile. The users can also choose who can see their interactions. The Platform is created in Go and Postgres for the Backend System and will probably use Svelte(Not decided) as the UX/UI",
     "stack":[
       "Go",
       "PostgreSQL"
@@ -39,7 +39,7 @@
   },
   "transpohub":{
     "title":"Transpohub",
-    "descr":"lorem ipsom dolor sit amet",
+    "descr":"Transpohub is a freelance platform for transporters to get in touch with potential clients, who can hire them for jobs. Transpohub was a group project created with my friends where we utilized React,Node and MongoDB to create the robust Application as a method of increasing our countries' transportation facilities. ",
     "stack":[
       "Node",
       "MongoDB",

@@ -56,7 +56,7 @@
 
   display: grid;
   grid-template-columns: 4vw 1fr 4vw;
-  grid-template-rows: 1fr;
+  grid-template-rows: 66vh;
 
   position: relative;
 }
@@ -90,4 +90,61 @@
 
 .projectData {
   text-align: center;
+}
+
+@media (max-width:1230px) {
+  .projects-container>div:not(.floater) {
+    width: 42vw;
+  }
+
+  .floater {
+    width: 44vw;
+    left: 23vw;
+  }
+}
+
+@media (max-width:970px) {
+  .floater {
+    width: 52vw;
+    left: 19vw;
+  }
+}
+
+@media (max-width:830px) {
+  .projects-container>div:not(.floater) {
+    width: 56vw;
+  }
+
+  .floater {
+    width: 68vw;
+    left: 12vw;
+
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+@media (max-width:737px) {
+  .projects-container>div:not(.floater) {
+    display: none;
+  }
+
+  .floater {
+    width: 85vw;
+    left: 2.5vw;
+    top: 4vh;
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+@media (max-width:830px) {
+  .floater p {
+    font-size: 1.5vh;
+  }
+}
+
+
+@media (max-width:500px) {
+  .floater p {
+    font-size: 1.25vh;
+  }
 }
