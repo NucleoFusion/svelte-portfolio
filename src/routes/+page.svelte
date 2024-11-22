@@ -72,4 +72,21 @@
     width: 100vw;
     height: 100vh;
   }
+
+  :global(::-webkit-scrollbar) {
+    width: 12.5px;
+  }
+
+  :global(::-webkit-scrollbar-track) {
+    background: transparent;
+  }
+
+  :global(::-webkit-scrollbar-thumb) {
+    background: rgb(48, 52, 70, 0.7);
+    border-radius: 5px;
+  }
+
+  :global(::-webkit-scrollbar-thumb:hover) {
+    background: rgb(48, 52, 70, 0.4);
+  }
 </style>
