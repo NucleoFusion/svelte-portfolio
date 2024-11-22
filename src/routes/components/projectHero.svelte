@@ -102,5 +102,14 @@
     .projectData button {
       width: 30vw;
     }
+
+    .projectData > h1 {
+      font-size: 3dvh;
+    }
+
+    .ongoing {
+      font-size: 1.5dvh;
+      right: 2vw;
+    }
   }
 </style>

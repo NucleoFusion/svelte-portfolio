@@ -33,7 +33,7 @@
 .about {
   grid-row: span 2;
 
-  font-size: 3.5vh;
+  font-size: 3.5lvh;
 
   padding: 2vh 4vw;
 }
@@ -66,17 +66,17 @@
   }
 
   .home-container h1 {
-    font-size: 3.5vh;
+    font-size: 3.5lvh;
   }
 
   .about {
-    font-size: 2.5vh;
+    font-size: 2.5lvh;
   }
 }
 
 @media (max-width: 730px) {
   .name {
-    font-size: 2.5vh;
+    font-size: 2.5lvh;
   }
 
   .home-container {

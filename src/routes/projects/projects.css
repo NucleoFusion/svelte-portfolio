@@ -108,6 +108,10 @@
     width: 52vw;
     left: 19vw;
   }
+
+  .projects-container>div>h1 {
+    font-size: 2vh;
+  }
 }
 
 @media (max-width:830px) {
