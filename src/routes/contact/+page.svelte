@@ -1,5 +1,31 @@
 <script>
   import InputField from "../components/InputField.svelte";
+  import axios from "axios";
+  import { PUBLIC_MAILER } from "$env/static/public";
+
+  async function sendMail(e) {
+    e.preventDefault();
+
+    const name = document.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+    const content = document.querySelector("#content").value;
+    const subject = document.querySelector("#subject").value;
+
+    await axios.post(
+      PUBLIC_MAILER,
+      {
+        name: name,
+        email: email,
+        subject: subject,
+        content: content,
+      },
+      {
+        headers: {
+          "content-type": "application/x-www-form-urlencoded",
+        },
+      },
+    );
+  }
 </script>
 
 <div class="contact-container jetBrainsMono">
@@ -8,14 +34,17 @@
   </div>
   <form class="mailForm">
     <InputField name="name" content="Name: " />
-    <InputField name="email" content="Email: " />
+    <InputField name="email" content="Email: " email={true} />
+    <InputField name="subject" content="Subject: " />
 
     <div class="textInput">
       <h3 class="for-style">Body:</h3>
       <textarea name="content" id="content"></textarea>
     </div>
 
-    <button type="submit" class="jetBrainsMono">Submit</button>
+    <button type="submit" class="jetBrainsMono" onclick={sendMail}
+      >Submit</button
+    >
   </form>
 </div>
 

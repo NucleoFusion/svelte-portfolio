@@ -25,13 +25,13 @@
   <div class="para">
     <h2>Experience</h2>
     <p>
-      {project.experience}
+      {@html project.experience}
     </p>
   </div>
   <div class="para">
     <h2>What I Learnt</h2>
     <p>
-      {project.learnt}
+      {@html project.learnt}
     </p>
   </div>
   <div class="links">

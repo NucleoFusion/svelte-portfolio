@@ -8,18 +8,9 @@
       "React"
     ],
     "onGoing":false
-  },
-  "lapisOAuth":{
-    "title":"LapisOAuth",
-    "descr":"lapisOAuth is a partial OAuth like Authentication System written in Go and Postgres for Backend and React for frontend. It provides the user with easy-to-understand instructions to implement the project in their own environment. It utilizes modern cryptographic techniques for Hashing to create a secure password maintenance.",
-    "stack":[
-      "Go",
-      "PostgreSQL",
-      "React"
-    ]
-  },
+  }, 
   "e-comm":{
-    "title":"E-commerce Website",
+    "title":"LapisStore",
     "descr":"An E-commerce website created in Node and React with PostgreSQL as the Database Management System. It utilizes The power of Node and PostgreSQL to create a fast and scalable backend system and takes advantage of React's multiple features to provide a beautiful and easy UI/UX",
     "stack":[
       "Node",

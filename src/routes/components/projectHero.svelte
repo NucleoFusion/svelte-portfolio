@@ -2,6 +2,7 @@
   import projects from "./projects.json";
 
   import { fade } from "svelte/transition";
+  import { goto } from "$app/navigation";
 
   let { projectName, floater } = $props();
 
@@ -22,7 +23,11 @@
   </div>
   {#if floater}
     <div>
-      <button>View Details</button>
+      <button
+        onclick={() => {
+          goto(`/projects/${projectName}`);
+        }}>View Details</button
+      >
     </div>
   {/if}
   {#if currData.onGoing && floater}

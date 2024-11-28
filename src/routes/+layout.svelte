@@ -1,6 +1,5 @@
 <script>
   import Navbar from "./navbar.svelte";
-
   import { onMount } from "svelte";
 
   let mount = $state(false);

@@ -17,7 +17,7 @@
   let next = $derived(curr + 1);
 
   function increment() {
-    if (curr < 4) {
+    if (curr < 3) {
       curr += 1;
     }
   }
@@ -49,7 +49,7 @@
       {/key}
     </div>
   {/if}
-  {#if next <= 4}
+  {#if next <= 3}
     <div
       class="next"
       out:fade={{ duration: 300 }}

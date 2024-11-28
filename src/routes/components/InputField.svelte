@@ -1,8 +1,12 @@
 <script>
-  let { content, name } = $props();
+  let { content, name, email } = $props();
 </script>
 
 <div>
   <label for={name}>{content}</label>
-  <input {name} id={name} />
+  {#if email}
+    <input {name} id={name} type="email" />
+  {:else}
+    <input required {name} id={name} />
+  {/if}
 </div>
