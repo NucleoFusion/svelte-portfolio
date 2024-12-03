@@ -1,0 +1,60 @@
+{
+  "id": "~",
+  "dir": true,
+  "children": [
+    {
+      "id": "Projects",
+      "dir": true,
+      "children": [
+        {
+          "id": "FootballAPI",
+          "dir": true,
+          "children": [
+            {
+              "id": "my_experience",
+              "dir": false,
+              "children": []
+            },
+            {
+              "id": "my_learning",
+              "dir": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "LapisBlog",
+          "dir": true,
+          "children": [
+            {
+              "id": "my_experience",
+              "dir": false,
+              "children": []
+            },
+            {
+              "id": "my_learning",
+              "dir": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Links",
+      "dir": true,
+      "children": [
+        {
+          "id": "github",
+          "dir": false,
+          "value": "https://github.com/NucleoFusion"
+        }
+      ]
+    },
+    {
+      "id": "About",
+      "dir": false,
+      "children": []
+    }
+  ]
+}
