@@ -61,7 +61,21 @@ function Execute(inp, curr) {
         outp.do = "g";
         outp.link = alias[inputArr[1]];
         break;
-    default:
+
+      case "man":
+        if (inputArr.length > 2) {
+          outp.op.push("Error: Too many arguments");
+          break;
+        } else if (inputArr.length === 1) {
+          outp.op.push("Error: Not enough arguments");
+          break;
+        }
+
+        outp.do = "m";
+        outp.name = inputArr[1]; 
+        break;
+
+      default:
         outp.op = ["Error: Command Not Found"]
     }
 

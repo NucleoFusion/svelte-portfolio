@@ -13,6 +13,8 @@
 }
 
 .terminal {
+  position: relative;
+
   background: var(--bg-color);
 
   height: 72vh;
@@ -46,6 +48,17 @@
   height: 20px;
 
   align-self: center;
+}
+
+.black-bg {
+  background-color: rgb(0, 0, 0, .5);
+
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .term-line-left {
