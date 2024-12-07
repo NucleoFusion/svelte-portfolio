@@ -62,6 +62,16 @@ function Execute(inp, curr) {
         outp.link = alias[inputArr[1]];
         break;
 
+      case "help":
+        if (inputArr.length > 1) {
+          outp.op.push("Error: Too many arguments");
+          break;
+        }
+
+        outp.do = "m";
+        outp.name = "help"; 
+        break;
+
       case "man":
         if (inputArr.length > 2) {
           outp.op.push("Error: Too many arguments");

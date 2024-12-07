@@ -1,0 +1,144 @@
+{
+  "about": {
+    "title": "About",
+    "data": [
+      {
+        "title": "About Me!",
+        "content": "Hi! I am a Software Developer who specializes in Backend Development, I am <br /> fluent in working with Go, Node, C++, Python and Also have know React <br /> and Svelte For UI Development."
+      },
+      {
+        "title": "Introduction",
+        "content": "lorem ipsum"
+      },
+      {
+        "title": "Experience",
+        "content": "<h4>Saas Implementation and API Integration - Courtyard Farms</h4> <br /> <div style='margin-left:2vw;'>lorem ipsum dolor sit amet</div>"
+      }
+    ]
+  },
+  "help": {
+    "title": "Help",
+    "data": [
+      {
+        "title": "cd",
+        "content": "cd can be utilized to navigate the folder tree. <br /> <br /> <i style='margin-left:2vw;'>cd [relative folder path] </i> <br /> "
+      },
+      {
+        "title": "ls",
+        "content": "cd can be utilized to list all directories and files in the current working directory user is in. <br /><br /> <i style='margin-left:2vw;'>ls [no args] </i>"
+      },
+      {
+        "title": "clear",
+        "content": "clear can be utilized to delete all historical prompts being shown to the user. <br /><br /> <i style='margin-left:2vw;'>clear [no args] </i> <br /> "
+      },
+      {
+        "title": "alias",
+        "content": "alias can be utilized to view all aliases present in the shell instance. <br /><br /> <i style='margin-left:2vw;'>alias [no args] </i> <br /> "
+      },
+      {
+        "title": "goto",
+        "content": "goto can be utilized along side aliases to redirect the user to a different website. <br /><br /> <i style='margin-left:2vw;'>goto [alias {should be valid address}] </i> <br /> "
+      },
+      {
+        "title": "help",
+        "content": "help can be utilized to view all the commands and their syntax. <br /><br /> <i style='margin-left:2vw;'>help [no args] </i> <br /> "
+      },
+      {
+        "title": "man",
+        "content": "man can be utilized to view a man page with the details in the file you want to look at, must be present in the directory the file is in. <br /><br /> <i style='margin-left:2vw;'>man [file_name] </i> <br /> "
+      }
+    ]
+  },
+  "footballapi": {
+    "title": "FootballAPI",
+    "isOngoing": false,
+    "deployed": true,
+    "data": [
+      {
+        "title": "Introduction",
+        "content": "A fast, Restful API providing football statistics (players, clubs, stadiums), written in Go with no external libraries, utilizing Go's concurrency features for fast response times. It also features a UI built in React."
+      },
+      {
+        "title": "Experience",
+        "content": "The FootballAPI Project is a project driven by my love for the football and my obsession with it, that is why I wanted to create an API where i could get accurate statistics for players and clubs for this season. <br /><br /> This was my first project with Go, after learning about its various features, this was the first time I implemented my learnings to practice. To be honest, I was blown away by the features and ease of implementing those. I mean come on, a switch case for types is such a good addition. <br /><br /> My favorite mechanic of Golang was its Error Handling, i mean returning errors and letting the programmer choose whether 'To Panic!' or 'Not to Panic!'(as the rustaceans say) is a great way to propogate errors. The traditional 'try catch' was too complicated and cumbersome to set up, for example in C++, for a 'correct' implementation, you would create Exception Classes and use them to discern the various type of exceptions that could occur, and this method would have a ton of boilerplate code."
+      },
+      {
+        "title": "What I Learnt",
+        "content": "FootballAPI was a huge learning oppurtunity as it not only allowed me to practice my Golang skills for the first time, and get me into how golang actually works, but i also learnt to do multiple functionalities involving the huge and great Go Standard Library. <br /><br /> The Go Standard Library, helped me implement a lot of different functionalities without having to surf the web for dozens of library and see if it fits my use case. For example, I used the crypto standard library that provided me with easy, low-level implementations of most cryptographic techniques and Hashing Technologies. <br /><br /> Using Golang for Database Operations also gave me plenty of opportunities to use Golang's Structs and their features, and also convert them easily to JSON to use in MongoDB. <br /><br /> FootballAPI was also where i learnt to use complex features of MongoDB like sorting and limiting data, in query, instead of doing it in my code."
+      },
+      {
+        "title": "Stack",
+        "content": "<div> <h3>Golang</h3> <h3> React </h3> <h3> MongoDB </h3> </div>"
+      }
+    ]
+  },
+  "lapisstore": {
+    "title": "LapisStore",
+    "isOngoing": true,
+    "deployed": true,
+    "data": [
+      {
+        "title": "Introduction",
+        "content": "An e-commerce website built with Node.js, React, and PostgreSQL. It utilizes Node and PostgreSQL for a scalable backend, while React ensures a smooth and beautiful frontend experience."
+      },
+      {
+        "title": "Experience",
+        "content": "LapisStore was my first major Node Application, Although I had created many small-scale applications with Node and Mongo, This was my first time creating a large and complex software. <br /><br /> I was intrigued by the vast amounts of packages, support and ease the language of Javascript provides and how a language meant to run in browsers and handle Document Object Model can make its way to server-side implementations.<br /><br /> This was also my first impression of Postgres, although i had worked with SQL before, this was my first time integrating a complex Database System and Structure into a large application. I also used React as a UI Framework, since it allowed me to create my full application relying on a single language. <br /><br /> Although using Javascript had its features, it also had downsides, first of all, Javascript and/or Express is slow, not majorly slow, but nonetheless slow. Also, the javascript concurrency and promise features are too complex for what they do, only after dabbling in real server-side languages such as Go and Rust have I come to realize, Javascript is not at par with them in this aspect."
+      },
+      {
+        "title": "What I Learnt",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lacinia arcu. Ut tempor purus ac magna pharetra, vel vehicula libero pharetra. Fusce auctor mauris non nisl vehicula, ac pharetra dui aliquet. Sed vel felis a eros lacinia volutpat non in ipsum. Nullam scelerisque lorem sed turpis pharetra, at volutpat arcu laoreet. Vivamus sit amet ante purus. Nam vel felis nulla. Nunc sollicitudin dui sit amet dui sodales, id dictum tortor convallis. Integer gravida, odio id vulputate cursus, enim est congue augue, id maximus erat turpis id nunc. Curabitur sollicitudin ligula magna, at rutrum lorem iaculis a. Proin condimentum, odio eget varius vehicula, libero eros pharetra turpis, a egestas odio turpis a nisl. Ut posuere quam non metus rhoncus, sed vestibulum ante varius. Mauris ac neque metus. Phasellus fringilla justo at convallis bibendum. Pellentesque egestas neque sed metus suscipit mollis. Ut tempor, felis ut rhoncus feugiat, velit justo lacinia turpis, in mollis augue purus vel velit. Curabitur sollicitudin purus sit amet libero maximus, sit amet posuere felis maximus. Aliquam ultricies mollis mauris, in tempor enim iaculis sed. Nulla nec magna ac leo dictum rutrum. Fusce et lectus felis. Pellentesque malesuada odio non augue euismod, at facilisis neque tincidunt. Aliquam erat volutpat. Morbi et vehicula odio. Etiam fringilla, orci in condimentum dictum, mi ipsum cursus leo, vitae tempor eros lorem vitae dui. Aliquam feugiat, dui et feugiat euismod, turpis arcu eleifend risus, non interdum magna elit eu erat."
+      },
+      {
+        "title": "Stack",
+        "content": "<div> <h3>Node</h3> <h3> React </h3> <h3> PostgreSQL </h3> </div>"
+      }
+    ]
+  },
+  "lapisblog": {
+    "title": "LapisBlog",
+    "isOngoing": true,
+    "deployed": false,
+    "data": [
+      {
+        "title": "Introduction",
+        "content": "A social network platform allowing anonymous or identifiable interactions with posts. Built with Go and Postgres for backend, frontend undecided (possibly Svelte), focusing on privacy and user control over interactions."
+      },
+      {
+        "title": "Experience",
+        "content": "The FootballAPI Project is a project driven by my love for the football and my obsession with it, that is why I wanted to create an API where i could get accurate statistics for players and clubs for this season. <br /><br /> This was my first project with Go, after learning about its various features, this was the first time I implemented my learnings to practice. To be honest, I was blown away by the features and ease of implementing those. I mean come on, a switch case for types is such a good addition. <br /><br /> My favorite mechanic of Golang was its Error Handling, i mean returning errors and letting the user choose whether 'To Panic!' or 'Not to Panic!'(as the rustaceans say). The traditional 'try catch' was too complicated and cumbersome to set up, for example in C++, for a 'correct' implementation, you would create Exception Classes and use them to discern the various type of exceptions."
+      },
+      {
+        "title": "What I Learnt",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lacinia arcu. Ut tempor purus ac magna pharetra, vel vehicula libero pharetra. Fusce auctor mauris non nisl vehicula, ac pharetra dui aliquet. Sed vel felis a eros lacinia volutpat non in ipsum. Nullam scelerisque lorem sed turpis pharetra, at volutpat arcu laoreet. Vivamus sit amet ante purus. Nam vel felis nulla. Nunc sollicitudin dui sit amet dui sodales, id dictum tortor convallis. Integer gravida, odio id vulputate cursus, enim est congue augue, id maximus erat turpis id nunc. Curabitur sollicitudin ligula magna, at rutrum lorem iaculis a. Proin condimentum, odio eget varius vehicula, libero eros pharetra turpis, a egestas odio turpis a nisl. Ut posuere quam non metus rhoncus, sed vestibulum ante varius. Mauris ac neque metus. Phasellus fringilla justo at convallis bibendum. Pellentesque egestas neque sed metus suscipit mollis. Ut tempor, felis ut rhoncus feugiat, velit justo lacinia turpis, in mollis augue purus vel velit. Curabitur sollicitudin purus sit amet libero maximus, sit amet posuere felis maximus. Aliquam ultricies mollis mauris, in tempor enim iaculis sed. Nulla nec magna ac leo dictum rutrum. Fusce et lectus felis. Pellentesque malesuada odio non augue euismod, at facilisis neque tincidunt. Aliquam erat volutpat. Morbi et vehicula odio. Etiam fringilla, orci in condimentum dictum, mi ipsum cursus leo, vitae tempor eros lorem vitae dui. Aliquam feugiat, dui et feugiat euismod, turpis arcu eleifend risus, non interdum magna elit eu erat."
+      },
+      {
+        "title": "Stack",
+        "content": "<div> <h3>Golang</h3> <h3> PostgreSQL </h3> </div>"
+      }
+    ]
+  },
+  "transpohub": {
+    "title": "Transpohub",
+    "deployed": true,
+    "isOngoing": false,
+    "data": [
+      {
+        "title": "Introduction",
+        "content": "A freelance platform for transporters to connect with clients for jobs, created as a group project using React, Node.js, and MongoDB. It aims to improve transportation facilities in the user's country."
+      },
+      {
+        "title": "Experience",
+        "content": "Transpohub was a project my friends and I started when we realized the lack of digitalization in the Transport Industry, while every field was moving forward with new technologies and software, the Transport Industry seemed stagnant, highly reliant on verbal communication to provide jobs to the transporters. <br /><br /> That is when we thought of a platform where we could connect transporters with potential clients while also providing transporters with a better work environment since an increase in jobs will also create a choice, a choice where the transporter can choose which job he would like to take. <br /><br />This project was a deviation from how I undergo my own projects because before suggesting a change or adding a feature I had to consult my friends on whether that change would be good/bad or just cumbersome. It was also different because there were times when I had to rely on other people’s work before I could code my own. <br /> <br /> Although there were downsides to this approach, them being more time-consuming, highly 3rd person-reliant atmosphere, etc. The Advantages far outweighed the disadvantages, I don't think I could have provided such a good project if I did not have the help and insight of my friends."
+      },
+      {
+        "title": "What I Learnt",
+        "content": "As mentioned, Transpohub was unique in my learning experiences because it not only taught me how collaboration in a developer group works in a somewhat professional environment but also taught me how patient you have to be when you depend a lot on other people. <br /><br /> Only after this project did I realize why collaboration strategies like AGILE etc are hated by developers yet still used in most professional environments, because even though it sucks to work depending on others, and sometimes it makes you feel it would be better if it was you alone. Still, From a bigger perspective(a group) you can realize that using these strategies are helpful. <br /><br />If i look from a code perspective, this also taught me the power of well split up code, project structure and documentation, because it makes PR's easier to merge and also makes it easier for others to change and understand your code."
+      },
+      {
+        "title": "Stack",
+        "content": "<div> <h3>Node</h3> <h3> React </h3> <h3> MongoDB </h3> </div>"
+      }
+    ]
+  }
+}

@@ -34,13 +34,13 @@
     }
 
     if (res.do === "m") {
-      toggleMan(res.name);
+      showMan(res.name);
     }
   }
 
-  function toggleMan(name) {
+  function showMan(name) {
     manVar = name;
-    displayMan = !displayMan;
+    displayMan = true;
   }
 
   function quitMan() {

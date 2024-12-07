@@ -4,13 +4,7 @@
   import right from "$lib/assets/right-light.png";
   import { fade } from "svelte/transition";
 
-  let projects = [
-    "transpohub",
-    "footballAPI",
-    "lapisBlog",
-    "e-comm",
-    "lapisOAuth",
-  ];
+  let projects = ["transpohub", "footballapi", "lapisblog", "lapisstore"];
 
   let curr = $state(1);
   let prev = $derived(curr - 1);

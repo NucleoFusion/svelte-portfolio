@@ -1,12 +1,67 @@
 {
   "about": [
     {
-      "title": "Introduction",
-      "content": "lorem ipsum"
+      "title": "About Me!",
+      "content": "Hi! I am a Software Developer who specializes in Backend Development, I am <br /> fluent in working with Go, Node, C++, Python and Also have know React <br /> and Svelte For UI Development."
     },
     {
       "title": "Introduction",
       "content": "lorem ipsum"
+    },
+    {
+      "title": "Experience",
+      "content": "<h4>Saas Implementation and API Integration - Courtyard Farms</h4> <br /> <div style='margin-left:2vw;'>lorem ipsum dolor sit amet</div>"
     }
-  ]
+  ],
+  "help": [
+    {
+      "title": "cd",
+      "content": "cd can be utilized to navigate the folder tree. <br /> <br /> <i style='margin-left:2vw;'>cd [relative folder path] </i> <br /> "
+    },
+    {
+      "title": "ls",
+      "content": "cd can be utilized to list all directories and files in the current working directory user is in. <br /><br /> <i style='margin-left:2vw;'>ls [no args] </i>"
+    },
+    {
+      "title": "clear",
+      "content": "clear can be utilized to delete all historical prompts being shown to the user. <br /><br /> <i style='margin-left:2vw;'>clear [no args] </i> <br /> "
+    },
+    {
+      "title": "alias",
+      "content": "alias can be utilized to view all aliases present in the shell instance. <br /><br /> <i style='margin-left:2vw;'>alias [no args] </i> <br /> "
+    },
+    {
+      "title": "goto",
+      "content": "goto can be utilized along side aliases to redirect the user to a different website. <br /><br /> <i style='margin-left:2vw;'>goto [alias {should be valid address}] </i> <br /> "
+    },
+    {
+      "title": "help",
+      "content": "help can be utilized to view all the commands and their syntax. <br /><br /> <i style='margin-left:2vw;'>help [no args] </i> <br /> "
+    },
+    {
+      "title": "man",
+      "content": "man can be utilized to view a man page with the details in the file you want to look at, must be present in the directory the file is in. <br /><br /> <i style='margin-left:2vw;'>man [file_name] </i> <br /> "
+    }
+  ],
+  "footballapi": [
+    {
+      "title": "Introduction",
+      "content": "A fast, Restful API providing football statistics (players, clubs, stadiums), written in Go with no external libraries, utilizing Go's concurrency features for fast response times. It also features a UI built in React."
+    },
+    {
+      "title": "Experience",
+      "content": "The FootballAPI Project is a project driven by my love for the football and my obsession with it, that is why I wanted to create an API where i could get accurate statistics for players and clubs for this season. <br /><br /> This was my first project with Go, after learning about its various features, this was the first time I implemented my learnings to practice. To be honest, I was blown away by the features and ease of implementing those. I mean come on, a switch case for types is such a good addition. <br /><br /> My favorite mechanic of Golang was its Error Handling, i mean returning errors and letting the programmer choose whether 'To Panic!' or 'Not to Panic!'(as the rustaceans say) is a great way to propogate errors. The traditional 'try catch' was too complicated and cumbersome to set up, for example in C++, for a 'correct' implementation, you would create Exception Classes and use them to discern the various type of exceptions that could occur, and this method would have a ton of boilerplate code."
+    },
+    {
+      "title": "What I Learnt",
+      "content": "FootballAPI was a huge learning oppurtunity as it not only allowed me to practice my Golang skills for the first time, and get me into how golang actually works, but i also learnt to do multiple functionalities involving the huge and great Go Standard Library. <br /><br /> The Go Standard Library, helped me implement a lot of different functionalities without having to surf the web for dozens of library and see if it fits my use case. For example, I used the crypto standard library that provided me with easy, low-level implementations of most cryptographic techniques and Hashing Technologies. <br /><br /> Using Golang for Database Operations also gave me plenty of opportunities to use Golang's Structs and their features, and also convert them easily to JSON to use in MongoDB. <br /><br /> FootballAPI was also where i learnt to use complex features of MongoDB like sorting and limiting data, in query, instead of doing it in my code."
+    },
+    {
+      "title": "Stack",
+      "content": "<div> <h3>Golang</h3> <h3> React </h3> <h3> MongoDB <h3 />"
+    }
+  ],
+  "transpohub": [],
+  "lapisblog": [],
+  "lapisstore": []
 }

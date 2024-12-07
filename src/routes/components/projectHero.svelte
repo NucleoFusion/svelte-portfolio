@@ -1,5 +1,5 @@
 <script>
-  import projects from "./projects.json";
+  import projects from "$lib/data.json";
 
   import { fade } from "svelte/transition";
   import { goto } from "$app/navigation";
@@ -14,26 +14,28 @@
   in:fade={{ delay: 400, duration: 300 }}
   out:fade={window.innerWidth > 830 ? { duration: 300 } : { duration: 0 }}
 >
-  <h1>{currData.title}</h1>
-  <p>{currData.descr}</p>
-  <div class="stack">
-    {#each currData.stack as tech}
-      <h3>{tech}</h3>
-    {/each}
-  </div>
-  {#if floater}
-    <div>
-      <button
-        onclick={() => {
-          goto(`/projects/${projectName}`);
-        }}>View Details</button
-      >
+  {#if currData}
+    <h1>{currData.title}</h1>
+    <p>
+      {currData.data.filter((item) => item.title === "Introduction")[0].content}
+    </p>
+    <div class="stack">
+      {@html currData.data.filter((item) => item.title === "Stack")[0].content}
     </div>
-  {/if}
-  {#if currData.onGoing && floater}
-    <div class="ongoing">
-      <h2>ONGOING</h2>
-    </div>
+    {#if floater}
+      <div>
+        <button
+          onclick={() => {
+            goto(`/projects/${projectName}`);
+          }}>View Details</button
+        >
+      </div>
+    {/if}
+    {#if currData.isOngoing && floater}
+      <div class="ongoing">
+        <h2>ONGOING</h2>
+      </div>
+    {/if}
   {/if}
 </div>
 

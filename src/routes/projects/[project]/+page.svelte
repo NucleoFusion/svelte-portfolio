@@ -6,15 +6,17 @@
   import github from "$lib/assets/github.png";
   import redirect from "$lib/assets/redirect.png";
 
-  import projectData from "./projectData.json";
+  import projectData from "$lib/data.json";
 
   let project = $page.params.project;
+  let parsed = false;
 
   onMount(() => {
-    if (!(project in projectData)) {
+    if (!(project in projectData) && project != "about" && project != "help") {
       goto("/projects");
     }
     project = projectData[project];
+    parsed = true;
   });
 </script>
 
@@ -25,13 +27,19 @@
   <div class="para">
     <h2>Experience</h2>
     <p>
-      {@html project.experience}
+      {#if parsed}
+        {@html project.data.filter((item) => item.title === "Experience")[0]
+          .content}
+      {/if}
     </p>
   </div>
   <div class="para">
     <h2>What I Learnt</h2>
     <p>
-      {@html project.learnt}
+      {#if parsed}
+        {@html project.data.filter((item) => item.title === "What I Learnt")[0]
+          .content}
+      {/if}
     </p>
   </div>
   <div class="links">
@@ -42,7 +50,11 @@
       <img alt="redirect" src={redirect} />
     </a>
   </div>
-  <div class="description">{project.descr}</div>
+  <div class="description">
+    {#if parsed}
+      {project.data.filter((item) => item.title === "Introduction")[0].content}
+    {/if}
+  </div>
 </div>
 
 <style>

@@ -1,5 +1,5 @@
 <script>
-  import manData from "./man.json";
+  import manData from "$lib/data.json";
   let { name, fn } = $props();
 
   function quit(e) {
@@ -12,10 +12,10 @@
 </script>
 
 <div class="man-div">
-  <h2>{name}</h2>
-  {#each manData[name] as obj}
-    <h3 class="man-heading">{onj.title}</h3>
-    <p class="man-para">{obj.content}</p>
+  <h2>{name.toUpperCase()}</h2>
+  {#each manData[name].data as obj}
+    <h3 class="man-heading">{obj.title}</h3>
+    <p class="man-para">{@html obj.content}</p>
   {/each}
 </div>
 
@@ -31,6 +31,25 @@
     bottom: 0;
     left: 0;
 
-    background-color: red;
+    background-color: #232634;
+    color: var(--secondary);
+
+    overflow-y: scroll;
+  }
+
+  .man-div > *:not(:first-child) {
+    width: 50vw;
+  }
+
+  .man-div h2 {
+    text-align: center;
+  }
+
+  .man-heading {
+    margin-left: 3vw;
+  }
+
+  .man-para {
+    margin-left: 5vw;
   }
 </style>
