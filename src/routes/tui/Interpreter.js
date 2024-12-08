@@ -1,5 +1,3 @@
-//TODO: Handle Empty input in "execute" function outside
-
 import {getParent} from "treezy";
 import tree from "./FolderTree.json"
 import alias from "./alias.json";
@@ -78,6 +76,11 @@ function Execute(inp, curr) {
           break;
         } else if (inputArr.length === 1) {
           outp.op.push("Error: Not enough arguments");
+          break;
+        }
+        
+        if (curr.children.filter((item) => item.id === inputArr[1]).length === 0) {
+          outp.op.push("Error: File not found, make sure you are in correct directory");
           break;
         }
 

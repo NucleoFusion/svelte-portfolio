@@ -1,4 +1,6 @@
 .terminal-container {
+  position: relative;
+
   width: 86vw;
   height: 72vh;
 
@@ -13,8 +15,6 @@
 }
 
 .terminal {
-  position: relative;
-
   background: var(--bg-color);
 
   height: 72vh;

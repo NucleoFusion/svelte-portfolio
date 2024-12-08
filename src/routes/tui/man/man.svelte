@@ -12,7 +12,7 @@
 </script>
 
 <div class="man-div">
-  <h2>{name.toUpperCase()}</h2>
+  <h2>{manData[name].title}</h2>
   {#each manData[name].data as obj}
     <h3 class="man-heading">{obj.title}</h3>
     <p class="man-para">{@html obj.content}</p>
@@ -28,8 +28,8 @@
 
     z-index: 13;
 
-    bottom: 0;
-    left: 0;
+    bottom: 4vh;
+    left: 2vw;
 
     background-color: #232634;
     color: var(--secondary);

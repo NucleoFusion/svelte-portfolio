@@ -10,6 +10,13 @@
   let displayMan = $state(false);
   let manVar = $state("");
 
+  $effect(() => {
+    let divObj = document.querySelector(".terminal");
+    divObj.scrollTop = divObj.scrollHeight;
+
+    history;
+  });
+
   function execute(a) {
     let obj = {
       input: a,

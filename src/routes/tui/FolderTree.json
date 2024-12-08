@@ -7,36 +7,24 @@
       "dir": true,
       "children": [
         {
-          "id": "FootballAPI",
+          "id": "footballapi",
           "dir": true,
-          "children": [
-            {
-              "id": "my_experience",
-              "dir": false,
-              "children": []
-            },
-            {
-              "id": "my_learning",
-              "dir": false,
-              "children": []
-            }
-          ]
+          "children": []
         },
         {
-          "id": "LapisBlog",
+          "id": "lapisblog",
           "dir": true,
-          "children": [
-            {
-              "id": "my_experience",
-              "dir": false,
-              "children": []
-            },
-            {
-              "id": "my_learning",
-              "dir": false,
-              "children": []
-            }
-          ]
+          "children": []
+        },
+        {
+          "id": "transpohub",
+          "dir": true,
+          "children": []
+        },
+        {
+          "id": "lapisstore",
+          "dir": true,
+          "children": []
         }
       ]
     },

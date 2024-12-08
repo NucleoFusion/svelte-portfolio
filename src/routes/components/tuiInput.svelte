@@ -7,7 +7,9 @@
 <div class="term-line">
   <TermLayout {name} />
   <div class="term-input active">
-    <p>{">"}</p>
+    <p>
+      {">"}
+    </p>
     <input
       name="input"
       class="jetBrainsMono"
