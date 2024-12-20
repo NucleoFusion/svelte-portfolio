@@ -51,6 +51,12 @@
   border-radius: 10px;
 }
 
+.mailForm div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: .1fr 0.9fr;
+}
+
 .mailForm textarea {
   width: 100%;
   height: 100%;
@@ -63,8 +69,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
-
-  gap: 1vw;
 }
 
 .textInput h3 {
