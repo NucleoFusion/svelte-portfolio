@@ -10,11 +10,13 @@
     <div class="prev-input">{obj.input}</div>
   </div>
 </div>
-<div class="output-outp" style="{`grid-row: span ${obj.output.length}`};">
-  {#each obj.output as op}
-    <p>{op}</p>
-  {/each}
-</div>
+{#if obj.output.length > 0}
+  <div class="output-outp" style="{`grid-row: span ${obj.output.length}`};">
+    {#each obj.output as op}
+      <p>{op}</p>
+    {/each}
+  </div>
+{/if}
 
 <style>
   .output-inp,
