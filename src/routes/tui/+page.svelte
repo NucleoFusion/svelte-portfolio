@@ -70,7 +70,7 @@
 </div>
 {#key displayMan}
   {#if displayMan}
-    <div class="black-bg"></div>
+    <div class="black-bg" onclick={quitMan}></div>
   {/if}
 {/key}
 

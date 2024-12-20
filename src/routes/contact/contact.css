@@ -96,6 +96,29 @@
   cursor: pointer;
 }
 
+.popup-div {
+  background: var(--bg-color);
+
+  position: fixed;
+
+  color: var(--secondary);
+  font-size: 2svh;
+
+  text-align: center;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  width: 30vw;
+  height: 30svh;
+
+  top: 35svh;
+  left: 35vw;
+}
+
 @media (max-width: 900px) {
   .contact-container input {
     width: 50vw;

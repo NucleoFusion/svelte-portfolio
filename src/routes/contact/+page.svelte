@@ -25,6 +25,11 @@
         },
       },
     );
+
+    document.querySelector("#name").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#content").value = "";
+    document.querySelector("#subject").value = "";
   }
 </script>
 
@@ -46,6 +51,8 @@
       >Submit</button
     >
   </form>
+
+  <div class="popup-div">The Mail has been Sent</div>
 </div>
 
 <style>

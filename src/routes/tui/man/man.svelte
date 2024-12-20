@@ -8,7 +8,12 @@
     }
   }
 
-  document.addEventListener("keydown", quit);
+  $effect(() => {
+    document.addEventListener("keydown", quit);
+    document
+      .querySelector(".black-bg")
+      .addEventListener("onclick", () => console.log("clicked"));
+  });
 </script>
 
 <div class="man-div">
