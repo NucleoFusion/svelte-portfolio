@@ -19,6 +19,7 @@
           let val = element.value;
           element.value = "";
           fn(val);
+          e.target.blur();
         }
       }}
     />
