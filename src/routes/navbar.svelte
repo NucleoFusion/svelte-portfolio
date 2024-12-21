@@ -329,7 +329,9 @@
   @media (max-width: 1050px) {
     .container {
       grid-template-columns: 30vw 60vw;
+      margin-left: 1.5vw;
     }
+
     .button-style {
       width: 10vw;
     }
@@ -341,6 +343,10 @@
     }
     .button-style {
       width: 13vw;
+    }
+
+    .dd-container {
+      margin-left: 1.5vw;
     }
   }
 </style>

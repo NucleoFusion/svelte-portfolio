@@ -157,10 +157,32 @@
   .contact-container input {
     width: 50vw;
   }
+
+  .popup-div {
+    width: 60vw;
+    left: 20vw;
+  }
+
+  .mailForm div {
+    grid-template-columns: 0.2fr 0.8fr;
+  }
+
+  .contact-container {
+    margin-left: 1.5vw;
+  }
 }
 
 @media (max-width: 650px) {
   .contact-container h1 {
     font-size: 3vh;
+  }
+
+  .popup-div {
+    width: 90vw;
+    left: 5vw;
+  }
+
+  .mailForm div {
+    grid-template-columns: 0.25fr 0.75fr;
   }
 }
