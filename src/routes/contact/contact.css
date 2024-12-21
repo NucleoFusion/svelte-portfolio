@@ -117,6 +117,40 @@
 
   top: 35svh;
   left: 35vw;
+
+  z-index: 11;
+}
+
+.popup-div button {
+  height: 4vh;
+
+  font-size: 1.75lvh;
+
+  background-color: var(--secondary);
+
+  border-radius: 10px;
+  border: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.popup-div button:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.contact-bg {
+  background-color: rgb(0, 0, 0, .6);
+
+  width: 100vw;
+  height: 100lvh;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  z-index: 10;
 }
 
 @media (max-width: 900px) {

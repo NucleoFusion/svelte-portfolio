@@ -3,6 +3,12 @@
   import axios from "axios";
   import { PUBLIC_MAILER } from "$env/static/public";
 
+  let mailSent = $state(false);
+
+  function MailDone() {
+    mailSent = false;
+  }
+
   async function sendMail(e) {
     e.preventDefault();
 
@@ -10,6 +16,13 @@
     const email = document.querySelector("#email").value;
     const content = document.querySelector("#content").value;
     const subject = document.querySelector("#subject").value;
+
+    if (email === "" || name === "" || content === "" || subject === "") {
+      alert("Not all fields are filled.");
+      return;
+    }
+
+    mailSent = true;
 
     await axios.post(
       PUBLIC_MAILER,
@@ -52,7 +65,15 @@
     >
   </form>
 
-  <div class="popup-div">The Mail has been Sent</div>
+  {#key mailSent}
+    {#if mailSent}
+      <div class="popup-div">
+        <h4>The Mail has been Sent</h4>
+        <button onclick={MailDone} class="jetBrainsMono">Ok</button>
+      </div>
+      <div class="contact-bg"></div>
+    {/if}
+  {/key}
 </div>
 
 <style>
