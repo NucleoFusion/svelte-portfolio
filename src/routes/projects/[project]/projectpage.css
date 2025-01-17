@@ -13,11 +13,13 @@
   grid-template-rows: 1fr 1fr 2fr;
   grid-template-columns: 1fr 1.5fr 1.5fr;
 
+  grid-auto-flow: column;
+
   gap: 2vh 1vw;
 }
 
-.projectPage-container>div:nth-child(2),
-.projectPage-container>div:nth-child(3) {
+.projectPage-container>div:nth-child(4),
+.projectPage-container>div:nth-child(5) {
   grid-row: span 3;
 
   overflow-y: auto;
@@ -85,4 +87,41 @@
 
 .para p {
   font-size: 1.75lvh;
+}
+
+@media (max-width:800px) {
+
+  .projectPage-container {
+    height: auto;
+
+    grid-auto-flow: row;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+  }
+
+  .projectPage-container>div:not(:nth-child(2)):not(:nth-child(1)) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width:520px) {
+
+  .projectPage-container {
+    height: auto;
+
+    grid-auto-flow: row;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr;
+  }
+
+  .projectPage-container>div {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .projectPage-container>div:nth-child(1) {
+    grid-column: span 2;
+  }
 }

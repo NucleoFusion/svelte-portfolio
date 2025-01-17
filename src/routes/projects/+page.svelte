@@ -4,6 +4,9 @@
   import right from "$lib/assets/right-light.png";
   import { fade } from "svelte/transition";
 
+  //TODO: this.responsive
+  //TODO: navbar auto close
+
   let projects = ["transpohub", "footballapi", "lapisblog", "lapisstore"];
 
   let curr = $state(1);

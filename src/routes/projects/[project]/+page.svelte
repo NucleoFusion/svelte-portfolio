@@ -24,6 +24,19 @@
   <div class="title">
     <h1>{project.title}</h1>
   </div>
+  <div class="links">
+    <a href="https://github.com">
+      <img alt="github" src={github} />
+    </a>
+    <a href="https://google.com">
+      <img alt="redirect" src={redirect} />
+    </a>
+  </div>
+  <div class="description">
+    {#if parsed}
+      {project.data.filter((item) => item.title === "Introduction")[0].content}
+    {/if}
+  </div>
   <div class="para">
     <h2>Experience</h2>
     <p>
@@ -41,19 +54,6 @@
           .content}
       {/if}
     </p>
-  </div>
-  <div class="links">
-    <a href="https://github.com">
-      <img alt="github" src={github} />
-    </a>
-    <a href="https://google.com">
-      <img alt="redirect" src={redirect} />
-    </a>
-  </div>
-  <div class="description">
-    {#if parsed}
-      {project.data.filter((item) => item.title === "Introduction")[0].content}
-    {/if}
   </div>
 </div>
 
