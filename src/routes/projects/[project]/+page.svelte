@@ -25,10 +25,14 @@
     <h1>{project.title}</h1>
   </div>
   <div class="links">
-    <a href="https://github.com">
+    <a href={project.github}>
       <img alt="github" src={github} />
     </a>
-    <a href="https://google.com">
+    <a
+      href={project.deployment}
+      class={`${!project.deployed ? "disabled" : ""}`}
+      title={`${!project.deployed ? "project has not been deployed" : "project deployment link"}`}
+    >
       <img alt="redirect" src={redirect} />
     </a>
   </div>

@@ -18,6 +18,10 @@
   gap: 3vh 2vw;
 }
 
+a.disabled {
+  pointer-events: none;
+}
+
 .projectPage-container>div:nth-child(4),
 .projectPage-container>div:nth-child(5) {
   grid-row: span 3;

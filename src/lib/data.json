@@ -53,6 +53,8 @@
     "title": "Lapis OAuth",
     "isOngoing": false,
     "deployed": false,
+    "github": "https://github.com/NucleoFusion/NucleoOAuth",
+    "deployment": "",
     "data": [
       {
         "title": "Introduction",
@@ -72,6 +74,8 @@
     "title": "LapisBlog",
     "isOngoing": true,
     "deployed": false,
+    "github": "https://github.com/NucleoFusion/LapisBlog",
+    "deployment": "",
     "data": [
       {
         "title": "Introduction",
@@ -91,6 +95,8 @@
     "title": "Transpohub",
     "deployed": true,
     "isOngoing": false,
+    "github": "https://github.com/NucleoFusion/Mobility-Future",
+    "deployment": "https://transpohub.vercel.app",
     "data": [
       {
         "title": "Introduction",
@@ -110,6 +116,8 @@
     "title": "Lapis Chat",
     "isOngoing": true,
     "deployed": false,
+    "github": "https://github.com/NucleoFusion/LapisChat",
+    "deployment": "",
     "data": [
       {
         "title": "Introduction",
