@@ -52,7 +52,7 @@
           goto("/projects");
         }}
         onkeydown={() => {
-          goto(302, "/projects");
+          goto("/projects");
         }}
       >
         Projects
@@ -100,9 +100,11 @@
           class="button-style"
           onclick={() => {
             goto("/tui");
+            toggleDD();
           }}
           onkeydown={() => {
             goto("/tui");
+            toggleDD();
           }}
         >
           TUI
@@ -115,9 +117,11 @@
           class="button-style"
           onclick={() => {
             goto("/projects");
+            toggleDD();
           }}
           onkeydown={() => {
             goto("/projects");
+            toggleDD();
           }}
         >
           Projects
@@ -130,9 +134,11 @@
           class="button-style"
           onclick={() => {
             goto("/about");
+            toggleDD();
           }}
           onkeydown={() => {
             goto("/about");
+            toggleDD();
           }}
         >
           About
@@ -145,9 +151,11 @@
           class="button-style"
           onclick={() => {
             goto("/contact");
+            toggleDD();
           }}
           onkeydown={() => {
             goto("/contact");
+            toggleDD();
           }}
         >
           Contact
@@ -176,7 +184,7 @@
     height: 10vh;
 
     margin-top: 3vh;
-    margin-left: 3vw;
+    margin-left: 3.5vw;
 
     border-radius: 20px;
 

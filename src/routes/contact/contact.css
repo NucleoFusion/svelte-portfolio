@@ -2,12 +2,16 @@
   background: var(--secondary);
 
   width: 90vw;
-  height: 70vh;
+  height: 73vh;
 
   border-radius: 15px;
 
+  box-shadow:
+    5px 5px 20px rgb(0, 0, 0, 0.3),
+    -5px -5px 20px rgb(0, 0, 0, 0.3);
+
   margin-top: 5vh;
-  margin-left: 2.25vw;
+  margin-left: 2.75vw;
 
   padding: 2vh 2vw;
 }

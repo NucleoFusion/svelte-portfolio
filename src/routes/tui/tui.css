@@ -12,6 +12,12 @@
   background: var(--secondary);
 
   padding: 4vh 2vw;
+
+  box-shadow:
+    5px 5px 20px rgb(0, 0, 0, 0.3),
+    -5px -5px 20px rgb(0, 0, 0, 0.3);
+
+
 }
 
 .terminal {

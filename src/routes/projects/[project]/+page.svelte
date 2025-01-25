@@ -46,15 +46,6 @@
       {/if}
     </p>
   </div>
-  <div class="para">
-    <h2>What I Learnt</h2>
-    <p>
-      {#if parsed}
-        {@html project.data.filter((item) => item.title === "What I Learnt")[0]
-          .content}
-      {/if}
-    </p>
-  </div>
 </div>
 
 <style>

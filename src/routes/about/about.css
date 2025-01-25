@@ -1,20 +1,21 @@
 .main-container {
   width: 85vw;
-  height: 77vh;
+  height: 78vh;
 
   margin-left: 6.5vw;
   margin-top: 5vh;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4fr 1fr 4fr;
+  grid-template-rows: 1fr 0.65fr 1fr;
 
-  gap: 2vh 1vw;
+  gap: 4vh 2vw;
 
   color: var(--bg-color);
 }
 
 .main-container>div {
+
   display: grid;
 
   justify-content: center;
@@ -25,6 +26,9 @@
 
   border-radius: 15px;
 
+  box-shadow:
+    5px 5px 20px rgb(0, 0, 0, 0.3),
+    -5px -5px 20px rgb(0, 0, 0, 0.3);
 }
 
 .main-container>div:nth-child(3),

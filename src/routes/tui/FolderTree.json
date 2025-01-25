@@ -3,33 +3,38 @@
   "dir": true,
   "children": [
     {
-      "id": "Projects",
+      "id": "projects",
       "dir": true,
       "children": [
         {
           "id": "footballapi",
-          "dir": true,
+          "dir": false,
           "children": []
         },
         {
           "id": "lapisblog",
-          "dir": true,
+          "dir": false,
           "children": []
         },
         {
           "id": "transpohub",
-          "dir": true,
+          "dir": false,
           "children": []
         },
         {
-          "id": "lapisstore",
+          "id": "lapischat",
+          "dir": false,
+          "children": []
+        },
+        {
+          "id": "lapisoauth",
           "dir": true,
           "children": []
         }
       ]
     },
     {
-      "id": "Links",
+      "id": "links",
       "dir": true,
       "children": [
         {
@@ -40,7 +45,7 @@
       ]
     },
     {
-      "id": "About",
+      "id": "about",
       "dir": false,
       "children": []
     }

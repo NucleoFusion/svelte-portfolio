@@ -1,21 +1,21 @@
 .projectPage-container {
-  width: 88vw;
+  width: 70vw;
   height: 73vh;
 
   border-radius: 15px;
 
-  margin-left: 4vw;
+  margin-left: 13vw;
   margin-top: 4vh;
 
   padding: 2vh 1vw;
 
   display: grid;
   grid-template-rows: 1fr 1fr 2fr;
-  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-template-columns: 1.5fr 2fr;
 
   grid-auto-flow: column;
 
-  gap: 2vh 1vw;
+  gap: 3vh 2vw;
 }
 
 .projectPage-container>div:nth-child(4),
@@ -23,11 +23,19 @@
   grid-row: span 3;
 
   overflow-y: auto;
+
+  overflow: scroll;
 }
 
 .projectPage-container>div {
   background: var(--secondary);
   border-radius: 15px;
+
+  box-shadow:
+    5px 5px 20px rgb(0, 0, 0, 0.3),
+    -5px -5px 20px rgb(0, 0, 0, 0.3);
+
+  padding: 1vh 1vw;
 }
 
 .title {
@@ -40,7 +48,7 @@
 
 .title>h1 {
   font-weight: 450;
-  font-size: 3.5vh;
+  font-size: 4vh;
 }
 
 .links {
@@ -54,8 +62,8 @@
 }
 
 .links img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 .description {
@@ -64,9 +72,9 @@
   align-items: center;
   text-align: center;
 
-  padding: 0vh 1vw;
+  padding: 0vh 2vw;
 
-  font-size: 1.65vh;
+  font-size: 2vh;
 }
 
 .para {
@@ -78,37 +86,46 @@
 
   gap: 1vh;
 
-  padding: 1vh 2vw;
+  padding: 1vh 4vw;
+
+  position: relative;
 }
 
 .para h2 {
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 .para p {
-  font-size: 1.75lvh;
+  font-size: 2lvh;
 }
 
 @media (max-width:800px) {
 
   .projectPage-container {
-    height: auto;
+    height: 125vh;
 
     grid-auto-flow: row;
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
   }
 
   .projectPage-container>div:not(:nth-child(2)):not(:nth-child(1)) {
     grid-column: span 2;
+  }
+
+  .projectPage-container>div {
+    padding: 1vh 3vw;
   }
 }
 
 @media (max-width:520px) {
 
   .projectPage-container {
-    height: auto;
+    height: 150vh;
+    width: 90vw;
+
+    margin-left: 2.5vw;
 
     grid-auto-flow: row;
 
